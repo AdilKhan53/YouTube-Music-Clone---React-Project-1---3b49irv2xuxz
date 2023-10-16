@@ -58,7 +58,7 @@ let Header = () => {
         <a href="/">
           {" "}
           <div className="pr-2 font-semibold  hover:underline ">
-            <span className="font-bold">Login: </span>Log out
+            <span className="font-bold">{userName}: </span>Log out
           </div>
         </a>
       </div>
