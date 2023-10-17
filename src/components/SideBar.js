@@ -5,8 +5,8 @@ import { faHome, faCompass, faMusic, faArrowUp } from "@fortawesome/free-solid-s
 
 let SideBar = () => {
   return (
-    <div className="p-5 shadow-lg w-[200px] h-[100%] border border-gray-500">
-      <div className="p-6">
+    <div className="md:p-5 sm:p-5 shadow-lg w-[100px] md:w-[200px] sm:w-[200px] h-[100%] border border-gray-500">
+      <div className="p-6 ">
         <Link to="/release">
           <h1 className="font-bold pb-4 hover:underline hover:text-emerald-400">
             <FontAwesomeIcon icon={faHome} className="mr-2" /> Home

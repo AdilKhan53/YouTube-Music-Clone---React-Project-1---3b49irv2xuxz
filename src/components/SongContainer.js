@@ -81,7 +81,7 @@ let SongContainer = () => {
     <>
     
       <div className="flex">
-        <div className="h-screen sticky top-16 ">
+        <div className="h-screen sticky top-14 md:top-16 sm:top-16 ">
         <SideBar/>
         </div>
       

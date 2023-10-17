@@ -18,13 +18,13 @@ let Header = () => {
 
   return (
     <div
-      className="flex justify-between p-2 m-0 bg-gray-900 border border-gray-500 text-gray-200"
+      className="flex justify-between p-2  bg-gray-900 border border-gray-500 text-gray-200"
     >
       <div className="flex items-center">
         <div>
           <a href="/">
             <img
-              className="w-32 md:w-40"
+              className="w-20 sm:w-40 md:w-40"
               src="https://music.youtube.com/img/on_platform_logo_dark.svg"
               alt="Logo"
             />
@@ -35,7 +35,7 @@ let Header = () => {
 
       <div className="flex items-center space-x-2">
         <input
-          className="px-4 md:px-7 border border-gray-500 p-2 rounded-l-full focus:outline-none focus:border-black text-black"
+          className="w-[100px] sm:w-[200px] px-4 md:px-7 border border-gray-500 p-2 rounded-l-full focus:outline-none focus:border-black text-black"
           type="text"
           placeholder=" Search"
           value={text}
@@ -54,13 +54,19 @@ let Header = () => {
       </div>
 
       <div className="flex items-center space-x-2">
-        
-        <a href="/">
-          {" "}
-          <div className="pr-2 font-semibold  hover:underline ">
-            <span className="font-bold">{userName} : </span>Log out
+
+      <Link to="/UserProfile">
+          
+          <div className="font-semibold hover:underline ">
+            <span className="text-sm sm:text-lg md:text-lg">{userName}:</span>
           </div>
+        
+        </Link>
+        
+        <a className="text-sm sm:text-lg md:text-lg hover:underline" href="/">
+          {" "}Log out
         </a>
+
       </div>
     </div>
   );

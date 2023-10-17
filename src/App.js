@@ -11,6 +11,7 @@ import SignUp from "./components/SignUp";
 import Subscription from "./components/Subscription";
 import Podcast from "./components/Podcast";
 import Header from "./components/Header";
+import UserProfile from "./components/UserProfile";
 
 
 
@@ -57,6 +58,10 @@ let appRouter = createBrowserRouter([{
     {
       path:"/songs/:id",
       element:<SongDetails/>
+    },
+    {
+      path:"/UserProfile",
+      element:<UserProfile/>
     },
   ]
 }])
